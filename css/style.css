@@ -1,0 +1,130 @@
+body{
+    overflow-x:hidden;
+    transform: translateX(150%);
+    animation: moving 3s ease-in-out forwards; 
+}
+header{
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+h1{
+    text-transform: capitalize;
+    margin-left: 5%;
+    font-size: 400%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.4;
+    animation: changing 1s infinite ease-in-out alternate;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+h3{
+    text-transform: capitalize;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    opacity: 0.4;
+    animation: coloring 1s infinite ease-in-out alternate;
+}
+hr{
+    display: block;
+    width: 30%;
+    border: 5px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.flex1,.flex2,.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.flex1 div,.flex2 div,.flex3 div{
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 350px;
+    background-color: #ddd;
+    border-radius: 30px;
+}
+p{
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    color: indigo;
+}
+i{
+    color: orange;
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    
+}
+span{
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    position: absolute;
+    left: 3%;
+    bottom: 20px;
+
+}
+.line-throw{
+    text-decoration: line-through;
+}
+@keyframes moving {
+    from{
+        transform: translateX(150%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes changing {
+    0%{
+        color:rgb(231, 91, 91) ;
+        opacity: 0.6;
+    }
+    50%{
+        color:rgb(166, 69, 69) ;
+        opacity: 0.8;
+    }
+    100%{
+        color: rgb(224, 18, 18);
+        opacity: 1;
+    }
+}
+
+@keyframes coloring {
+    0%{
+        color: rgb(173, 47, 114) ;
+        opacity: 0.6;
+    }
+    50%{
+        color:rgb(186, 106, 149) ;
+        opacity: 0.8;
+    }
+    100%{
+        color: rgb(255, 127, 195);
+        opacity: 1;
+    }
+    
+}
+
+
+;
